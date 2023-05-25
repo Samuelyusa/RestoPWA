@@ -6,16 +6,24 @@ const createrestaurantDetailTemplate = (restaurant) => `
     <div class="restaurant__info">
         <h3>Information</h3>
         <h4>City</h4>
-        <p>${restaurant.city}</p>
+        <p>
+            <span>
+                <img src="${CONFIG.ICON}buildings.png" class="icon">
+            </span>
+            ${restaurant.city}
+        </p>
         <h4>Address</h4>
-        <p>${restaurant.address} minutes</p>
+        <p>
+            <span>
+                <img src="${CONFIG.ICON}address.png" class="icon">
+            </span>
+            ${restaurant.address}</p>
         <h4>Rating</h4>
-        <p>${restaurant.rating}</p>
-        <h4>Category</h4>
-        <p>${restaurant.categories.name}</p>
-        <h4>Menu</h4>
-        <p>${restaurant.menus.foods}</p>
-        <p>${restaurant.menus.drinks}</p>
+        <p>
+            <span>
+                <img src="${CONFIG.ICON}star.png" class="icon">
+            </span>
+            ${restaurant.rating}</p>
     </div>
     <div class="restaurant__overview">
         <h3>Overview</h3>

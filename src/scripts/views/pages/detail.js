@@ -1,5 +1,6 @@
 import UrlParser from '../../routes/url-parser';
 import RestaurantAPISource from '../../data/restaurant-source';
+import { createrestaurantDetailTemplate } from '../templates/template-creator'; 
 
 const Detail = {
     async render() {
