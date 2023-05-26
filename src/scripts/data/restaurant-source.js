@@ -17,10 +17,21 @@ class RestaurantAPISource {
         const response = await fetch(API_ENDPOINT.DETAIL(id));
         const responseJson = await response.json();
         return responseJson.restaurant;
-        // console.log(API_ENDPOINT.DETAIL(id));
-        // return response.json();
-        // return response
     }
+
+    // static async CategoriesRestaurant(id) {
+    //     const response = await fetch(API_ENDPOINT.DETAIL(id));
+    //     const responseJson = await response.json();
+    //     console.log(responseJson);
+    //     const string = responseJson.
+    //     const categories = responseJson.restaurant.categories;
+    //     console.log(categories);
+
+    //     categories.forEach((num) => {
+    //         console.log(categories[num]);
+    //     })
+    //     // return responseJson.Categories;
+    // }
 }
 
 export default RestaurantAPISource;

@@ -29,6 +29,23 @@ const createrestaurantDetailTemplate = (restaurant) => `
         <h3>Overview</h3>
         <p>${restaurant.description}</p>
     </div>
+    <div class="restaurant__menu">
+        <div class="restaurant__food">
+        <h3>Food</h3>
+        
+        </div>
+
+        <div class="restaurant__drink">
+        <h3>Drink</h3>
+        
+        </div>
+
+    </div>
+    <div class="restaurant__categories">
+        <h3>Categories</h3>
+    </div>
+    <div class="restaurant__reviews">
+    </div>
 `;
 
 const createrestaurantItemTemplate = (restaurant) => `
