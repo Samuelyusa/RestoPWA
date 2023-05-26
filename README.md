@@ -4,6 +4,7 @@
 ⏲️Time Line  
 📆Day1 24 May 21.00 - 23.30 : Progress 1  
 📆Day2 25 May 21.00 - 23:45 : Finishing Progres 1 & Mulai Progress 2  
+📆Day3 26 May 20.00 - 23.15 : Finishing Progress 2 (-styling & fav btn)
 
 Fitur yang harus ada pada aplikasi:  
 
@@ -24,9 +25,10 @@ Fitur yang harus ada pada aplikasi:
       ☑️Alamat  
       ☑️Kota  
       ☑️Deskripsi  
-      🟨 Menu Makanan  
-      🟨Menu Minuman  
-      🟨Customer Reviews  
+      ☑️Menu Makanan  
+      ☑️Menu Minuman  
+      ☑️Customer Reviews  
+      🟧Styling
   🟧Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).  
   
     
