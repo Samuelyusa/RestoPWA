@@ -4,7 +4,8 @@
 ⏲️Time Line  
 📆Day1 24 May 21.00 - 23.30 : Progress 1  
 📆Day2 25 May 21.00 - 23:45 : Finishing Progres 1 & Mulai Progress 2  
-📆Day3 26 May 20.00 - 23.15 : Finishing Progress 2 (-styling & fav btn)
+📆Day3 26 May 20.00 - 23.15 : Finishing Progress 2 (-styling & fav btn)  
+📆Day4 27 May 21.00 - 23.10 : Adding Style to review section, Set Web App Manifect, Service Worker, Cache API and Cache Service Worker.
 
 Fitur yang harus ada pada aplikasi:  
 
