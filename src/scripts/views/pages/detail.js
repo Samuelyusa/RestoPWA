@@ -39,10 +39,16 @@ const Detail = {
 
         for (let number in review ) {
             reviewContainer.innerHTML += `
-            <div class="restaurant__reviews_client">
-                <p>${review[number].name}. </p>
-                <p>${review[number].review}. </p>
-                <p>${review[number].date}. </p>
+            <div class="review__container review_container_shadow">
+                <div class="review__name">
+                    <span>${review[number].name}</span>
+                </div>
+                <div class="review__content">
+                    <p>${review[number].review}<p>
+                </div>
+                <div class="review__date">
+                    <p>${review[number].date}<p>
+                </div>
             </div>
             `;
         }
