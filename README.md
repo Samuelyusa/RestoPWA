@@ -10,32 +10,32 @@
 Fitur yang harus ada pada aplikasi:  
 
 ⚪ 1. Halaman Utama (Daftar Restoran) - Day 1  
-  Syarat:  
-  ☑️ Menampilkan daftar restoran yang datanya bersumber dari API https://restaurant-api.dicoding.dev/. Silakan lihat dokumentasinya pada halaman tersebut.  
-  ☑️Wajib menampilkan nama, gambar dan minimal salah satu diantara kota, rating, dan atau deskripsi pada restoran.  
-  ☑️Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.  
-  ☑️Hero elemen tetap dipertahankan.  
+&ensp; Syarat:  
+&emsp;  ☑️ Menampilkan daftar restoran yang datanya bersumber dari API https://restaurant-api.dicoding.dev/. Silakan lihat dokumentasinya pada  halaman tersebut.  
+&emsp;  ☑️Wajib menampilkan nama, gambar dan minimal salah satu diantara kota, rating, dan atau deskripsi pada restoran.  
+&emsp;  ☑️Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.  
+&emsp;  ☑️Hero elemen tetap dipertahankan.  
   
   
 ⚪ 2. Halaman Detail Restoran - Day 2  
-  Syarat:  
-  ☑️Menampilkan detail dari restoran yang dipilih dari halaman utama (daftar restoran) atau halaman favorit restoran.  
-  Pada halaman detail restoran harus terdapat:  
-      ☑️Nama restoran  
-      ☑️Gambar  
-      ☑️Alamat  
-      ☑️Kota  
-      ☑️Deskripsi  
-      ☑️Menu Makanan  
-      ☑️Menu Minuman  
-      ☑️Customer Reviews  
-      🟧Styling
-  🟧Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).  
+&ensp;  Syarat:  
+ &emsp; ☑️Menampilkan detail dari restoran yang dipilih dari halaman utama (daftar restoran) atau halaman favorit restoran.  
+ &emsp;&ensp; Pada halaman detail restoran harus terdapat:  
+ &emsp;     ☑️Nama restoran  
+ &emsp;     ☑️Gambar  
+ &emsp;     ☑️Alamat  
+ &emsp;     ☑️Kota  
+ &emsp;     ☑️Deskripsi  
+ &emsp;     ☑️Menu Makanan  
+ &emsp;     ☑️Menu Minuman  
+ &emsp;     ☑️Customer Reviews    
+ &emsp;     🟧Styling  
+ &emsp; 🟧Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).  
   
     
     
 
-⚪ : Judul Kriteria Pengerjaan  
-☑️ : Sudah selesai dikerjakan  
-🟨 : Dalam proses pengerjaan  
-🟧 : Akan dikerjakan selanjutnya  
+&emsp;⚪ : Judul Kriteria Pengerjaan  
+&emsp;☑️ : Sudah selesai dikerjakan  
+&emsp;🟨 : Dalam proses pengerjaan  
+&emsp;🟧 : Akan dikerjakan selanjutnya  
