@@ -1,4 +1,4 @@
-import RestaurantAPISource from "../../data/restaurant-source";
+import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
 import { createrestaurantItemTemplate } from '../templates/template-creator';
 
 const Favorite = {
@@ -13,8 +13,9 @@ const Favorite = {
     },
     
     async afterRender() {
-        const restaurants = await RestaurantAPISource.Favorite();
+        const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
         const restaurantsContainer = document.querySelector('#restaurants');
+
         restaurants.forEach((restaurant) => {
             restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);
         });

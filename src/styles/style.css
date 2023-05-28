@@ -13,7 +13,7 @@ body {
 
 
 /*
-  AppBar
+    AppBar
 */
 
 .app-bar {
@@ -93,7 +93,7 @@ Hero
 }
 
 /*
-  Main Content
+    Main Content
 */
 
 main {
@@ -112,7 +112,7 @@ main {
 
 
 /*
-  restaurants
+    restaurants
 */
 
 .restaurants {
@@ -128,7 +128,7 @@ main {
 
 
 /*
-  restaurant Item
+    restaurant Item
 */
 
 .restaurant-item {
@@ -184,7 +184,7 @@ main {
 
 
 /*
-  restaurant
+    restaurant
 */
 
 .restaurant {
@@ -203,6 +203,28 @@ main {
 
 .restaurant .restaurant__info h4 {
     margin: 8px 0;
+}
+
+/*
+    Like
+*/
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
 }
 
 /*

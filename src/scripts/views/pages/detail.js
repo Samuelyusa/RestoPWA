@@ -1,11 +1,13 @@
 import UrlParser from '../../routes/url-parser';
 import RestaurantAPISource from '../../data/restaurant-source';
-import { createrestaurantDetailTemplate } from '../templates/template-creator'; 
+import { createrestaurantDetailTemplate  } from '../templates/template-creator'; 
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
     async render() {
         return `
         <div id="restaurant" class="restaurant"></div>
+        <div id="likeButtonContainer"></div>
         `;
     },
     
@@ -52,6 +54,25 @@ const Detail = {
             </div>
             `;
         }
+
+        LikeButtonInitiator.init({
+            likeButtonContainer: document.querySelector('#likeButtonContainer'),
+            restaurant,
+            // : {
+                // id: restaurant.id,
+                // name: restaurant.name,
+                // description: restaurant.description,
+                // city: restaurant.city,
+                // address: restaurant.address,
+                // pictureId: restaurant.pictureId,
+                // categories: restaurant.categories,
+                // menus: restaurant.menus,
+                // rating: restaurant.rating,
+                // customerReviews: restaurant.customerReviews.name,
+                // customerReviewsReview: restaurant.customerReviews.review,
+                // customerReviews: restaurant.customerReviews.name,
+            // },
+        });
         
     },
 };
