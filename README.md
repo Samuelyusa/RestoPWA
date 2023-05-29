@@ -30,7 +30,7 @@ Fitur yang harus ada pada aplikasi:
  &emsp; ☑️Menu Makanan  
  &emsp; ☑️Menu Minuman  
  &emsp; ☑️Customer Reviews  
- &emsp; 🟧Styling  
+ &emsp; 🟨Styling  
  &emsp; ☑️Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).
 
 ⚪ 3.Halaman Daftar Restoran Favorit - Day 5
@@ -42,9 +42,9 @@ Fitur yang harus ada pada aplikasi:
 
 ⚪ 4.Native Capability  
 &ensp; Syarat:
-&emsp;🟨Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox.
-&emsp; 🟨Aplikasi harus menampilkan icon Add to Home Screen.
-&emsp; 🟨Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen.
+&emsp;☑️Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox.
+&emsp; ☑️Aplikasi harus menampilkan icon Add to Home Screen.
+&emsp; ☑️Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen.
 
 ⚪ 5.Code Quality
 &ensp;Syarat:
@@ -53,7 +53,7 @@ Fitur yang harus ada pada aplikasi:
 &emsp;🟧Periksa kembali sebelum mengirimkan submission, apakah project yang Anda kirimkan sesuai dengan kriteria yang ditetapkan atau tidak, ditandai dengan tidak adanya satupun error ketika menjalankan eslint.
 
 ⚪ 6.Pertahankan syarat yang ada pada submission sebelumnya.
-🟧Seperti responsibilitas tampilan, aksesibilitas pada website, appbar, footer dan sebagainya.
+🟨Seperti responsibilitas tampilan, aksesibilitas pada website, appbar, footer dan sebagainya.
 
 &emsp;⚪ : Judul Kriteria Pengerjaan  
 &emsp;☑️ : Sudah selesai dikerjakan  
