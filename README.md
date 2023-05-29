@@ -6,7 +6,7 @@
 📆Day1 24 May 21.00 - 23.30 : Progress 1  
 📆Day2 25 May 21.00 - 23:45 : Finishing Progres 1 & Mulai Progress 2  
 📆Day3 26 May 20.00 - 23.15 : Finishing Progress 2 (-styling & fav btn)  
-📆Day4 27 May 21.00 - 23.10 : Adding Style to review section, Set Web App Manifect, Service Worker, Cache API and Cache Service Worker.
+📆Day4 27 May 21.00 - 23.10 : Adding Style to review section, Set Web App Manifect, Service Worker, Cache API and Cache Service Worker.  
 📆Day5 28 May 20.30 - 22.42 : Using Workbox for Service Worker, Using IndexDB to store loved restaurants. Need to correct offline capabilities tomorrow.
 
 Fitur yang harus ada pada aplikasi:
@@ -33,11 +33,11 @@ Fitur yang harus ada pada aplikasi:
  &emsp; 🟨Styling  
  &emsp; ☑️Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).
 
-⚪ 3.Halaman Daftar Restoran Favorit - Day 5
-&ensp; Syarat:
-&emsp; ☑️Halaman Daftar Restoran dapat diakses melalui menu navigasi favorit.
-&emsp; ☑️Menampilkan restoran yang difavoritkan oleh pengguna (data diambil dari indexedDB).
-&emsp; ☑️Wajib menampilkan nama, gambar dan minimal salah satu diantara kota, rating, dan atau deskripsi pada restoran.
+⚪ 3.Halaman Daftar Restoran Favorit - Day 5  
+&ensp; Syarat:  
+&emsp; ☑️Halaman Daftar Restoran dapat diakses melalui menu navigasi favorit.  
+&emsp; ☑️Menampilkan restoran yang difavoritkan oleh pengguna (data diambil dari indexedDB).  
+&emsp; ☑️Wajib menampilkan nama, gambar dan minimal salah satu diantara kota, rating, dan atau deskripsi pada restoran.  
 &emsp; ☑️Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
 
 ⚪ 4.Native Capability  
