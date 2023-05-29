@@ -7,7 +7,8 @@
 📆Day2 25 May 21.00 - 23:45 : Finishing Progres 1 & Mulai Progress 2  
 📆Day3 26 May 20.00 - 23.15 : Finishing Progress 2 (-styling & fav btn)  
 📆Day4 27 May 21.00 - 23.10 : Adding Style to review section, Set Web App Manifect, Service Worker, Cache API and Cache Service Worker.  
-📆Day5 28 May 20.30 - 22.42 : Using Workbox for Service Worker, Using IndexDB to store loved restaurants. Need to correct offline capabilities tomorrow.
+📆Day5 28 May 20.30 - 22.42 : Using Workbox for Service Worker, Using IndexDB to store loved restaurants. Need to correct offline capabilities tomorrow.  
+📆Day6 28 May 21.30 - 00.05 : Styling Main Page. Offline Capabilities [OK].  Next styling Detail Page.
 
 Fitur yang harus ada pada aplikasi:
 
@@ -41,21 +42,21 @@ Fitur yang harus ada pada aplikasi:
 &emsp; ☑️Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
 
 ⚪ 4.Native Capability  
-&ensp; Syarat:
-&emsp;☑️Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox.
-&emsp; ☑️Aplikasi harus menampilkan icon Add to Home Screen.
-&emsp; ☑️Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen.
-
-⚪ 5.Code Quality
-&ensp;Syarat:
-&emsp;☑️Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya.
-&emsp;☑️Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.
-&emsp;🟧Periksa kembali sebelum mengirimkan submission, apakah project yang Anda kirimkan sesuai dengan kriteria yang ditetapkan atau tidak, ditandai dengan tidak adanya satupun error ketika menjalankan eslint.
-
-⚪ 6.Pertahankan syarat yang ada pada submission sebelumnya.
-🟨Seperti responsibilitas tampilan, aksesibilitas pada website, appbar, footer dan sebagainya.
-
-&emsp;⚪ : Judul Kriteria Pengerjaan  
+&ensp; Syarat:  
+&emsp;☑️Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox.  
+&emsp; ☑️Aplikasi harus menampilkan icon Add to Home Screen.  
+&emsp; ☑️Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen.  
+  
+⚪ 5.Code Quality  
+&ensp;Syarat:  
+&emsp;☑️Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya.  
+&emsp;☑️Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.  
+&emsp;🟧Periksa kembali sebelum mengirimkan submission, apakah project yang Anda kirimkan sesuai dengan kriteria yang ditetapkan atau tidak, ditandai dengan tidak adanya satupun error ketika menjalankan eslint.  
+  
+⚪ 6.Pertahankan syarat yang ada pada submission sebelumnya.  
+🟨Seperti responsibilitas tampilan, aksesibilitas pada website, appbar, footer dan sebagainya.  
+  
+&emsp;⚪ : Judul Kriteria Pengerjaan    
 &emsp;☑️ : Sudah selesai dikerjakan  
 &emsp;🟨 : Dalam proses pengerjaan  
 &emsp;🟧 : Akan dikerjakan selanjutnya
