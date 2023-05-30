@@ -8,7 +8,9 @@
 📆Day3 26 May 20.00 - 23.15 : Finishing Progress 2 (-styling & fav btn)  
 📆Day4 27 May 21.00 - 23.10 : Adding Style to review section, Set Web App Manifect, Service Worker, Cache API and Cache Service Worker.  
 📆Day5 28 May 20.30 - 22.42 : Using Workbox for Service Worker, Using IndexDB to store loved restaurants. Need to correct offline capabilities tomorrow.  
-📆Day6 28 May 21.30 - 00.05 : Styling Main Page. Offline Capabilities [OK].  Next styling Detail Page.
+📆Day6 29 May 21.30 - 00.05 : Styling Main Page. Offline Capabilities [OK].  Next styling Detail Page.  
+📆Day7 30 May 21.30 - 23.54 : Styling Detail Page.
+
 
 Fitur yang harus ada pada aplikasi:
 
@@ -31,7 +33,7 @@ Fitur yang harus ada pada aplikasi:
  &emsp; ☑️Menu Makanan  
  &emsp; ☑️Menu Minuman  
  &emsp; ☑️Customer Reviews  
- &emsp; 🟨Styling  
+ &emsp; ☑️Styling  
  &emsp; ☑️Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).
 
 ⚪ 3.Halaman Daftar Restoran Favorit - Day 5  
