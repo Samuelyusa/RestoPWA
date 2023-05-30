@@ -1,48 +1,46 @@
 import CONFIG from '../../globals/config';
 
 const createrestaurantDetailTemplate = (restaurant) => `
-    <h2 class="restaurant__title">${restaurant.name}</h2>
-    <img class="restaurant__poster" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
-    <div class="restaurant__info">
-        <h3>Information</h3>
-        <h4>City</h4>
-        <p>
-            <span>
-                <img src="${CONFIG.ICON}buildings.png" class="icon">
-            </span>
-            ${restaurant.city}
-        </p>
-        <h4>Address</h4>
-        <p>
-            <span>
-                <img src="${CONFIG.ICON}address.png" class="icon">
-            </span>
-            ${restaurant.address}</p>
-        <h4>Rating</h4>
-        <p>
-            <span>
-                <img src="${CONFIG.ICON}star.png" class="icon">
-            </span>
-            ${restaurant.rating}</p>
-    </div>
-    <div class="restaurant__overview">
-        <h3>Overview</h3>
-        <p>${restaurant.description}</p>
-    </div>
-    <div class="restaurant__menu">
-        <div class="restaurant__food">
-        <h3>Food</h3>
+    <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
+        alt="Restaurant Image" class="restaurant__poster"/>
+
+    <div class="restaurant__details">
+        <h1 class="restaurant__name">${restaurant.name}</h1>
+        <p class="restaurant__address">${restaurant.address}, ${restaurant.city}</p>
+        <p class="restaurant__rating">
+        <span>
+            <img src="${CONFIG.ICON}/star-rate.png" style="vertical-align: bottom;" />
+        </span>
+        ${restaurant.rating} / 5</p>
+
+        <div class="tag__categories">
         </div>
 
-        <div class="restaurant__drink">
-        <h3>Drink</h3>
+        <div class="restaurant__subTitle">
+            <h2>Menu</h2>
         </div>
-    </div>
-    <div class="restaurant__categories">
-        <h3>Categories</h3>
-    </div>
-    <div class="restaurant__reviews">
-        <h3>Review</h3>
+
+        <div class="restaurant__subTitle">
+            <h3>Culinary Perfection</h3>
+        </div>
+        <div class="restaurant__menu">
+            <div class="restaurant__food"></div>
+        </div>
+
+        <div class="restaurant__subTitle">
+            <h3>Our Delightful Drinks</h3>
+        </div>
+        <div class="restaurant__menu">
+            <div class="restaurant__drink"></div>
+        </div>
+
+        <div class="restaurant__subTitle">
+            <h2>Customer Experiences</h2>
+        </div>
+        
+        <div class="restaurant__reviews"></div>
+
+
     </div>
 `;
 
