@@ -1,21 +1,27 @@
 import DrawerInitiator from '../utils/drawer-initiator';
+import UpButtonInitiator from '../utils/up-button-initiator';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
 class App {
-    constructor({ button, drawer, content }) {
+    constructor({ button, drawer, content, upArrow }) {
         this._button = button;
         this._drawer = drawer;
         this._content = content;
+        this._upArrow = upArrow;
     
         this._initialAppShell();
     }
     
     _initialAppShell() {
         DrawerInitiator.init({
-        button: this._button,
-        drawer: this._drawer,
-        content: this._content,
+            button: this._button,
+            drawer: this._drawer,
+            content: this._content,
+        });
+
+        UpButtonInitiator.init({
+        upArrow: this._upArrow,
         });
     
         // kita bisa menginisiasikan komponen lain bila ada

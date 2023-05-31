@@ -18,7 +18,7 @@ const Home = {
         const restaurantsContainer = document.querySelector('#restaurants');
             restaurants.forEach((restaurant) => {
             restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);
-        });
+            });
     },
 };
 

@@ -32,13 +32,26 @@ body {
     top: 0;
 }
 
-.skip-link-bottom{
-    bottom: -50px;
-}
-.skip-link-bottom:focus {
-    bottom: 0;
-}
+.upArrow {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #15ad66;
 
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+
+    display: none;
+}
 /*
     AppBar
 */
@@ -294,6 +307,11 @@ main {
     margin: 5px;
 }
 
+.restaurant__description{
+    text-align: center;
+}
+
+
 .restaurant__menu , .restaurant__food, .restaurant__drink{
     display: flex;
     flex-wrap: wrap;
@@ -350,7 +368,7 @@ main {
     background-color: #db0000;
 
     position: fixed;
-    bottom: 16px;
+    bottom: 87px;
     right: 16px;
     border-radius: 50%;
     border: 0;

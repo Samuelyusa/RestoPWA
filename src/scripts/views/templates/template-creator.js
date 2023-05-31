@@ -17,6 +17,13 @@ const createrestaurantDetailTemplate = (restaurant) => `
         </div>
 
         <div class="restaurant__subTitle">
+            <h2 tabindex="0">Description</h2>
+        </div>
+        <div class="restaurant__description">
+            <p tabindex="0">${restaurant.description}</p>
+        </div>
+
+        <div class="restaurant__subTitle">
             <h2 tabindex="0">Menu</h2>
         </div>
 
@@ -71,6 +78,7 @@ const createLikedButtonTemplate = () => `
         <i class="fa fa-thumbs-up" aria-hidden="true"></i>
     </button>
 `;
+
 
 export {
     createrestaurantItemTemplate,
