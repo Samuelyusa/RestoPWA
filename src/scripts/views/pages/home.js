@@ -6,7 +6,7 @@ const Home = {
         return `
 		<div class="hero"></div>
         <div class="content">
-            <h2 class="content__heading">Home</h2>
+            <h2 tabindex="0" class="content__heading">Home</h2>
             <div id="restaurants" class="restaurants">
             </div>
         </div>

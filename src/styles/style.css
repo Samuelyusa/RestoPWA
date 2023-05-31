@@ -11,6 +11,33 @@ body {
     flex-direction: column;
 }
 
+/*
+    Skip Link
+*/
+
+.skip-link {
+    position: absolute;
+    left: 0;
+    background-color: #15ad66;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link-top {
+    top: -50px;
+}
+
+.skip-link-top:focus {
+    top: 0;
+}
+
+.skip-link-bottom{
+    bottom: -50px;
+}
+.skip-link-bottom:focus {
+    bottom: 0;
+}
 
 /*
     AppBar

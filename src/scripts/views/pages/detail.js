@@ -20,7 +20,7 @@ const Detail = {
         const categoriesContainer = document.querySelector('.tag__categories');
         const Categories = restaurant.categories;
         for (let number in Categories ) {
-            categoriesContainer.innerHTML += `<div class="tag">${Categories[number].name}</div>`;
+            categoriesContainer.innerHTML += `<div tabindex="0" class="tag">${Categories[number].name}</div>`;
         }
 
         const foodContainer = document.querySelector('.restaurant__food');
@@ -28,7 +28,7 @@ const Detail = {
         for (let number in food ) {
             foodContainer.innerHTML += `
             <div class="food__item">
-                    <h4>${food[number].name}</h4>
+                    <h4 tabindex="0">${food[number].name}</h4>
             </div>`;
         }
 
@@ -38,7 +38,7 @@ const Detail = {
         for (let number in drink ) {
             drinkContainer.innerHTML += `
             <div class="drink__item">
-                    <h4>${drink[number].name}</h4>
+                    <h4 tabindex="0">${drink[number].name}</h4>
             </div>`;
         }
 
@@ -48,9 +48,9 @@ const Detail = {
         for (let number in review ) {
             reviewContainer.innerHTML += `
             <div class="restaurant__comment">
-                <div class="restaurant__author">${review[number].name}</div>
-                <div class="restaurant__timestamp">${review[number].date}</div>
-                <div class="restaurant__message">${review[number].review}</div>
+                <div tabindex="0" class="restaurant__author">${review[number].name}</div>
+                <div tabindex="0" class="restaurant__timestamp">${review[number].date}</div>
+                <div tabindex="0" class="restaurant__message">${review[number].review}</div>
             </div>
             `;
         }
