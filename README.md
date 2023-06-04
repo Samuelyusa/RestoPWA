@@ -11,6 +11,8 @@
 📆Day6 29 May 21.30 - 00.05 : Styling Main Page. Offline Capabilities [OK].  Next styling Detail Page.  
 📆Day7 30 May 21.30 - 23.54 : Styling Detail Page.  
 📆Day8 31 May 22.00 - 00.33 : Add Scroll Up Button initiator (used to scroll to the top of the page faster). added keyboard accessibility function.  
+📆Day9 04 Jun 20.00 - 22.50 : Add Consumer Review. and fix some styling.
+
 
 
 
