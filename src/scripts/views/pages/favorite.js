@@ -14,11 +14,23 @@ const Favorite = {
     
     async afterRender() {
         const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
+        const FavContainer = document.querySelector('.content');
         const restaurantsContainer = document.querySelector('#restaurants');
 
-        restaurants.forEach((restaurant) => {
-            restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);
-        });
+        if (restaurants.length != 0) {
+            restaurants.forEach((restaurant) => {
+                restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);
+            });
+        } else {
+            const restaurantMessage = document.createElement('div');
+            restaurantMessage.classList.add('restaurant__emptyMessage');
+            FavContainer.appendChild(restaurantMessage);
+            const message = document.createElement('p');
+            message.innerHTML = 'No favorite restaurants have been added yet.<br>Add a Favorite Restaurant by pressing the thumbs up button.';
+            restaurantMessage.appendChild(message);
+        }
+
+        console.log(restaurants);
     },
 };
 

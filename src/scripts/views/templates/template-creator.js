@@ -40,15 +40,28 @@ const createrestaurantDetailTemplate = (restaurant) => `
         <div class="restaurant__menu">
             <div class="restaurant__drink"></div>
         </div>
-
-        <div class="restaurant__subTitle">
-            <h2 tabindex="0">Customer Experiences</h2>
-        </div>
-        
-        <div class="restaurant__reviews"></div>
-
-
     </div>
+`;
+
+const createReviewTemplate = (restaurant) => `
+    <div class="restaurant__addReview">
+        <p><label>Add your experience<label></p>
+        <input id="addReviewName" type="text" placeholder="Tell us your name here.."/>
+        <textarea id="addReviewText" placeholder="Tell us your review here.."/></textarea>
+        <span class="errorMessage" id="errorMessage"></span>
+        <button type="submit" id="submit-btn">Submit</button>
+    </div>
+
+    <div class="restaurant__subTitle">
+        <p tabindex="0">CUSTOMER EXPERIENCES</p>
+    </div>
+
+    <div class="restaurant__subTitleBold">
+        <p>What They Say</p>
+    </div>
+
+    <div class="restaurant__reviews"></div>
+
 `;
 
 const createrestaurantItemTemplate = (restaurant) => `
@@ -83,6 +96,7 @@ const createLikedButtonTemplate = () => `
 export {
     createrestaurantItemTemplate,
     createrestaurantDetailTemplate,
+    createReviewTemplate,
     createLikeButtonTemplate,
     createLikedButtonTemplate,
 };

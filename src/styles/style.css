@@ -257,8 +257,25 @@ main {
 }
 
 .restaurant__subTitle {
-    font-family: 'Righteous', cursive;
-    color: #15ad66;
+    /* font-family: 'Righteous', cursive; */
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+}
+
+.restaurant__subTitleBold {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    /* font-size: 24px; */
+    margin: 10px;
+}
+
+.restaurant__subTitleBold p {
+    font-size: 26px !important;
 }
 
 .restaurant__details {
@@ -269,7 +286,7 @@ main {
     padding: 20px;
     /* background-color: #f2f2f2; */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     /* width: 600px; */
     max-width: 100%;
 }
@@ -309,6 +326,7 @@ main {
 
 .restaurant__description{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 
@@ -354,7 +372,6 @@ main {
 
 .restaurant__details p {
     font-size: 16px;
-    margin-bottom: 10px;
 }
 /*
     Like
@@ -383,15 +400,29 @@ main {
     Review Section
 */
 
+#restaurant__review{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .restaurant__reviews{
     align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .restaurant__comment {
-    margin-bottom: 20px;
+    margin: 10px;
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
+    width: 80vw;
+    overflow-wrap: break-word;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .restaurant__comment .restaurant__author {
@@ -408,7 +439,79 @@ main {
 }
 
 /*
-  Footer
+    Restaurant Add Review
+*/
+
+.restaurant__addReview{
+    margin: 10px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 60vw;
+    overflow-wrap: break-word;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant__addReview label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: 'Geologica', sans-serif;
+}
+
+#addReviewName, #addReviewText {
+    font-family: Arial, sans-serif;
+    width: 58vw;
+    max-width: 58vw;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+#addReviewName:focus,
+#addReviewText:focus {
+    outline-color: #15ad66;
+}
+
+.restaurant__addReview button{
+    padding: 15px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    /* width: 100%; */
+    margin: auto;
+}
+
+.restaurant__addReview button:hover {
+    background-color: #45a049;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*
+    Favorite
+*/
+
+.restaurant__emptyMessage{
+    text-align: center;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+    Footer
 */
 
 footer {
