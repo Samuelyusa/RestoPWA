@@ -1,6 +1,7 @@
 import CONFIG from '../../globals/config';
 
-const createrestaurantDetailTemplate = (restaurant) => `
+const createrestaurantDetailTemplate = (restaurant) => 
+    `
     <img tabindex="0" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
         alt="Restaurant Image" class="restaurant__poster"/>
 
@@ -41,7 +42,7 @@ const createrestaurantDetailTemplate = (restaurant) => `
             <div class="restaurant__drink"></div>
         </div>
     </div>
-`;
+    `;
 
 const createReviewTemplate = (restaurant) => `
     <div class="restaurant__addReview">

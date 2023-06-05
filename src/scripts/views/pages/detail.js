@@ -19,6 +19,8 @@ const Detail = {
         const restaurantContainer = document.querySelector('#restaurant');
         const ReviewContainer = document.querySelector('#restaurant__review');
 
+
+        
         restaurantContainer.innerHTML = createrestaurantDetailTemplate(restaurant);
         ReviewContainer.innerHTML = createReviewTemplate(restaurant);
 
@@ -83,7 +85,7 @@ const Detail = {
 
         const submitBtn = document.querySelector('#submit-btn');
         submitBtn.addEventListener('click', (event) => {
-            event.preventDefault();
+            // event.preventDefault();
 
             const RestoId = restaurant.id;
             const reviewName = document.querySelector('#addReviewName').value;
@@ -148,7 +150,6 @@ const Detail = {
             document.querySelector('#addReviewName').value = '';
             document.querySelector('#addReviewText').value = '';
         }
-
     },
 };
 
