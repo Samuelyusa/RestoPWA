@@ -11,7 +11,9 @@
 📆Day6 29 May 21.30 - 00.05 : Styling Main Page. Offline Capabilities [OK].  Next styling Detail Page.  
 📆Day7 30 May 21.30 - 23.54 : Styling Detail Page.  
 📆Day8 31 May 22.00 - 00.33 : Add Scroll Up Button initiator (used to scroll to the top of the page faster). added keyboard accessibility function.  
-📆Day9 04 Jun 20.00 - 22.50 : Add Consumer Review. and fix some styling.
+📆Day9 04 Jun 20.00 - 22.50 : Add Consumer Review. and fix some styling.  
+📆Day10 05 Jun 21.00 - 00.01 : Add Loading indicator and 404 Page Display when Response API is failed (or 404).  
+
 
 
 
@@ -64,9 +66,9 @@ Fitur yang harus ada pada aplikasi:
 
 🔥The Challenge :  
   
-&emsp;🟡 1. Tambahkan fitur untuk memberikan consumer review baru pada halaman detail. Silakan simak caranya pada dokumentasi API (Gunakan testing key untuk api key-nya).  
-&emsp;🔴 2. Alangkah baiknya bila Anda menerapkan Web Component secara native menggunakan Custom Element.  
-&emsp;🔴 3. Tambahkan indikator loading ketika data sedang dimuat dari server dan tampilkanlah keterangan/halaman bila request yang dilakukan gagal.  
+&emsp;☑️ 1. Tambahkan fitur untuk memberikan consumer review baru pada halaman detail. Silakan simak caranya pada dokumentasi API (Gunakan testing key untuk api key-nya).  
+&emsp;🟡  2. Alangkah baiknya bila Anda menerapkan Web Component secara native menggunakan Custom Element.  
+&emsp;☑️ 3. Tambahkan indikator loading ketika data sedang dimuat dari server dan tampilkanlah keterangan/halaman bila request yang dilakukan gagal.  
   
 &emsp;⚪ : Judul Kriteria Pengerjaan    
 &emsp;☑️ : Sudah selesai dikerjakan  
