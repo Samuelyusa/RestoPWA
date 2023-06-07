@@ -127,8 +127,8 @@ body {
 Hero 
 */
 
-.hero {
-    display: flex;
+hero-comp {
+    display: block;
     align-items: center;
     min-height: 320px;
     width: 100%;
@@ -136,6 +136,7 @@ Hero
     background-image: url("../public/images/heros/hero-image_2.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*
@@ -400,11 +401,18 @@ main {
     Review Section
 */
 
-#restaurant__review{
+#restaurant__review__container{
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+review-list, #restaurant__Newreview {
+    /* align-self: stretch; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .restaurant__reviews{
@@ -414,7 +422,7 @@ main {
     justify-content: center;
 }
 
-.restaurant__comment {
+review-item, .restaurant__Newcomment {
     margin: 10px;
     background-color: #f9f9f9;
     padding: 15px;
@@ -422,19 +430,18 @@ main {
     width: 80vw;
     overflow-wrap: break-word;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
-.restaurant__comment .restaurant__author {
+.restaurant__Newcomment .restaurant__author, .restaurant__author {
     font-weight: bold;
 }
 
-.restaurant__comment .restaurant__timestamp {
+.restaurant__Newcomment .restaurant__timestamp, .restaurant__timestamp {
     font-size: 12px;
     color: #888;
 }
 
-.restaurant__comment .restaurant__message {
+.restaurant__Newcomment .restaurant__message, .restaurant__message {
     margin-top: 15px;
 }
 

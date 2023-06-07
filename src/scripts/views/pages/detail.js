@@ -1,14 +1,18 @@
 import UrlParser from '../../routes/url-parser';
 import RestaurantAPISource from '../../data/restaurant-source';
-import { createrestaurantDetailTemplate, createReviewTemplate  } from '../templates/template-creator'; 
+import { createrestaurantDetailTemplate, createReviewTemplate, displayNewReviewTemplate } from '../templates/template-creator'; 
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 import API_ENDPOINT from '../../globals/api-endpoint';
+import '../../component/reviewList';
 
 const Detail = {
     async render() {
         return `
         <div id="restaurant" class="restaurant"></div>
-        <div id="restaurant__review"></div>
+        <div id="restaurant__review__container"></div>
+        <review-list></review-list>
+        <div id="restaurant__Newreview"></div>
+        
         <div id="likeButtonContainer"></div>
         `;
     },
@@ -17,12 +21,14 @@ const Detail = {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const restaurant = await RestaurantAPISource.detailRestaurant(url.id);
         const restaurantContainer = document.querySelector('#restaurant');
-        const ReviewContainer = document.querySelector('#restaurant__review');
+        const ReviewContainer = document.querySelector('#restaurant__review__container');
+        const NewReviewContainer = document.querySelector('#restaurant__Newreview');
 
 
         
         restaurantContainer.innerHTML = createrestaurantDetailTemplate(restaurant);
         ReviewContainer.innerHTML = createReviewTemplate(restaurant);
+        NewReviewContainer.innerHTML = displayNewReviewTemplate(restaurant);
 
 
         
@@ -51,18 +57,15 @@ const Detail = {
             </div>`;
         }
 
-        const reviewContainer = document.querySelector('.restaurant__reviews');
-        const review = restaurant.customerReviews;
+        const reviewListContainer = document.querySelector('review-list');
+        const reviewResto = restaurant.customerReviews;
 
-        for (let number in review ) {
-            reviewContainer.innerHTML += `
-            <div class="restaurant__comment">
-                <div tabindex="0" class="restaurant__author">${review[number].name}</div>
-                <div tabindex="0" class="restaurant__timestamp">${review[number].date}</div>
-                <div tabindex="0" class="restaurant__message">${review[number].review}</div>
-            </div>
-            `;
-        }
+
+        const renderReview = reviewRestos => {
+            reviewListContainer.reviews = reviewRestos;
+        };
+
+        renderReview(reviewResto);
 
         LikeButtonInitiator.init({
             likeButtonContainer: document.querySelector('#likeButtonContainer'),
@@ -137,15 +140,15 @@ const Detail = {
             const options = { day: 'numeric', month: 'long', year: 'numeric' };
             const formattedDate = date.toLocaleDateString('id-ID', options);
 
-            const reviewList = document.querySelector('.restaurant__reviews');
-            const newReview = document.createElement('div');
-            newReview.classList.add('restaurant__comment');
+            const newReview = document.querySelector('#restaurant__Newcomment');
+            // const newReview = document.createElement('div');
+            newReview.classList.add('restaurant__Newcomment');
             newReview.innerHTML = `
                 <div tabindex="0" class="restaurant__author">${name}</div>
                 <div tabindex="0" class="restaurant__timestamp">${formattedDate}</div>
                 <div tabindex="0" class="restaurant__message">${review}</div>
             `;
-            reviewList.appendChild(newReview);
+            // reviewList.appendChild(newReview);
 
             document.querySelector('#addReviewName').value = '';
             document.querySelector('#addReviewText').value = '';

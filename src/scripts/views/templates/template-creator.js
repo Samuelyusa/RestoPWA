@@ -60,8 +60,10 @@ const createReviewTemplate = (restaurant) => `
     <div class="restaurant__subTitleBold">
         <p>What They Say</p>
     </div>
+`;
 
-    <div class="restaurant__reviews"></div>
+const displayNewReviewTemplate = (restaurant) => `
+    <div id="restaurant__Newcomment"></div>
 
 `;
 
@@ -98,6 +100,7 @@ export {
     createrestaurantItemTemplate,
     createrestaurantDetailTemplate,
     createReviewTemplate,
+    displayNewReviewTemplate,
     createLikeButtonTemplate,
     createLikedButtonTemplate,
 };

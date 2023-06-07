@@ -25,7 +25,7 @@ const UpButtonInitiator = {
             left: 0, 
             behavior: 'smooth' 
         });
-        document.querySelector('#skip-link').focus();
+        // document.querySelector('#skip-link').focus();
     }
 };
 

@@ -32,9 +32,6 @@ class App {
         const page = routes[url];
 
         const loader__container = document.querySelector('.loader__container');
-        const loader = document.querySelector('.loader');
-        const loaderMessage = document.querySelector('#loaderMessage');
-
         try {
             this._content.innerHTML = await page.render();
             await page.afterRender();
