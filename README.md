@@ -13,7 +13,7 @@
 📆Day8 31 May 22.00 - 00.33 : Add Scroll Up Button initiator (used to scroll to the top of the page faster). added keyboard accessibility function.  
 📆Day9 04 Jun 20.00 - 22.50 : Add Consumer Review. and fix some styling.  
 📆Day10 05 Jun 21.00 - 00.01 : Add Loading indicator and 404 Page Display when Response API is failed (or 404).  
-📆Day11 08 Jun 00.30 - 00.01 : Create Custom Element HTML Native for Hero Element and Review Section. Next Create Custom Element for RestaurantList.  
+📆Day11 08 Jun 22.30 - 00.30 : Create Custom Element HTML Native for Hero Element and Review Section. Next Create Custom Element for RestaurantList.  
 
 
 Fitur yang harus ada pada aplikasi:
