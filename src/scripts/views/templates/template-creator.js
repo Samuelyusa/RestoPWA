@@ -1,10 +1,10 @@
 import CONFIG from '../../globals/config';
 
-const createrestaurantDetailTemplate = (restaurant) => 
+const createrestaurantDetailTemplate = (restaurant) =>
     `
     <img tabindex="0" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
         alt="Restaurant Image" class="restaurant__poster"/>
-
+        
     <div class="restaurant__details">
         <h1 tabindex="0" class="restaurant__name">${restaurant.name}</h1>
         <p  tabindex="0"class="restaurant__address">${restaurant.address}, ${restaurant.city}</p>
@@ -64,8 +64,8 @@ const createReviewTemplate = (restaurant) => `
 
 const displayNewReviewTemplate = (restaurant) => `
     <div id="restaurant__Newcomment"></div>
-
 `;
+
 
 const createrestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item">

@@ -17,6 +17,9 @@ const Favorite = {
         const FavContainer = document.querySelector('.content');
         const restaurantsContainer = document.querySelector('#restaurants');
 
+        const heroImage = document.querySelector('hero-comp');
+        heroImage.setAttribute('style', 'display:none');
+
         if (restaurants.length != 0) {
             restaurants.forEach((restaurant) => {
                 restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);

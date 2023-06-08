@@ -4,6 +4,8 @@ import { createrestaurantDetailTemplate, createReviewTemplate, displayNewReviewT
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 import API_ENDPOINT from '../../globals/api-endpoint';
 import '../../component/reviewList';
+import '../../component/heroComp';
+import CONFIG from '../../globals/config';
 
 const Detail = {
     async render() {
@@ -23,15 +25,19 @@ const Detail = {
         const restaurantContainer = document.querySelector('#restaurant');
         const ReviewContainer = document.querySelector('#restaurant__review__container');
         const NewReviewContainer = document.querySelector('#restaurant__Newreview');
-
-
         
+        const heroImage = document.querySelector('hero-comp');
+        const heroUrl = `${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}`;
+
+        // heroImage.removeAttribute('src');
+        heroImage.setAttribute('src', heroUrl);
+        // heroImage.setAttribute('style', 'opacity:0.7 !important');
+        heroImage.setAttribute('style', 'display:block');
+
         restaurantContainer.innerHTML = createrestaurantDetailTemplate(restaurant);
         ReviewContainer.innerHTML = createReviewTemplate(restaurant);
         NewReviewContainer.innerHTML = displayNewReviewTemplate(restaurant);
 
-
-        
         const categoriesContainer = document.querySelector('.tag__categories');
         const Categories = restaurant.categories;
         for (let number in Categories ) {

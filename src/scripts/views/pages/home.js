@@ -16,8 +16,15 @@ const Home = {
         const restaurants = await RestaurantAPISource.Home();
         const restaurantsContainer = document.querySelector('#restaurants');
             restaurants.forEach((restaurant) => {
-            restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);
+                restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);
             });
+        
+        const heroImage = document.querySelector('hero-comp');
+        const heroUrl = '../images/heros/hero-image_2.jpg';
+
+        // heroImage.removeAttribute('src');
+        heroImage.setAttribute('src', heroUrl);
+        heroImage.setAttribute('style', 'opacity:1 !important');
     },
 };
 

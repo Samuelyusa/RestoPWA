@@ -127,7 +127,7 @@ body {
 Hero 
 */
 
-hero-comp {
+/* hero-comp {
     display: block;
     align-items: center;
     min-height: 320px;
@@ -137,6 +137,21 @@ hero-comp {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+hero-comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero{
+    width: 100vw;
+    position: absolute;
 }
 
 /*
@@ -255,6 +270,12 @@ main {
     width: 100%;
     max-width: 300px;
     object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.restaurant .restaurant__poster:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .restaurant__subTitle {
