@@ -13,7 +13,8 @@
 📆Day8 31 May 22.00 - 00.33 : Add Scroll Up Button initiator (used to scroll to the top of the page faster). added keyboard accessibility function.  
 📆Day9 04 Jun 20.00 - 22.50 : Add Consumer Review. and fix some styling.  
 📆Day10 05 Jun 21.00 - 00.01 : Add Loading indicator and 404 Page Display when Response API is failed (or 404).  
-📆Day11 08 Jun 22.30 - 00.30 : Create Custom Element HTML Native for Hero Element and Review Section. Next Create Custom Element for RestaurantList.  
+📆Day11 07 Jun 22.30 - 00.30 : Create Custom Element HTML Native for Hero Element and Review Section. Next Create Custom Element for RestaurantList.  
+📆Day12 08 Jun 20.30 - 23.00 : Re-Setting Hero Element and styling Detail pagae.
 
 
 Fitur yang harus ada pada aplikasi:
@@ -57,7 +58,7 @@ Fitur yang harus ada pada aplikasi:
 &ensp;Syarat:  
 &emsp;☑️Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya.  
 &emsp;☑️Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.  
-&emsp;🟨Periksa kembali sebelum mengirimkan submission, apakah project yang Anda kirimkan sesuai dengan kriteria yang ditetapkan atau tidak, ditandai dengan tidak adanya satupun error ketika menjalankan eslint.  
+&emsp;☑️Periksa kembali sebelum mengirimkan submission, apakah project yang Anda kirimkan sesuai dengan kriteria yang ditetapkan atau tidak, ditandai dengan tidak adanya satupun error ketika menjalankan eslint.  📆Day12  
   
 ⚪ 6.Pertahankan syarat yang ada pada submission sebelumnya. - 📆Day 8  
 ☑️Seperti responsibilitas tampilan, aksesibilitas pada website, appbar, footer dan sebagainya.  
@@ -65,7 +66,7 @@ Fitur yang harus ada pada aplikasi:
 🔥The Challenge :  
   
 &emsp;☑️ 1. Tambahkan fitur untuk memberikan consumer review baru pada halaman detail. Silakan simak caranya pada dokumentasi API (Gunakan testing key untuk api key-nya).  -📆Day10  
-&emsp;🟡  2. Alangkah baiknya bila Anda menerapkan Web Component secara native menggunakan Custom Element. -📆Day 11  
+&emsp;☑️  2. Alangkah baiknya bila Anda menerapkan Web Component secara native menggunakan Custom Element. -📆Day 11 and 12  
 &emsp;☑️ 3. Tambahkan indikator loading ketika data sedang dimuat dari server dan tampilkanlah keterangan/halaman bila request yang dilakukan gagal.  -📆Day10  
   
 &emsp;⚪ : Judul Kriteria Pengerjaan    
