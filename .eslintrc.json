@@ -18,6 +18,19 @@
         "no-restricted-globals": 0,
         "linebreak-style": 0,
         "indent": ["error", "tab"],
-        "allowIndentationTabs" : 0
+        "allowIndentationTabs" : 0,
+        "arrow-spacing": 0,
+        "no-tabs": 0,
+        "space-before-blocks":0,
+        "no-return-assign":0,
+        "no-unused-vars":0,
+        "disable-indent":0,
+        "no-param-reassign":0,
+        "no-restricted-syntax":0,
+        "guard-for-in":0,
+        "no-const-assign":0,
+        "camelcase":2,
+        "consistent-return":0
+
     }
 }

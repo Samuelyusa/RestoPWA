@@ -11,6 +11,10 @@ body {
     flex-direction: column;
 }
 
+a {
+    padding: 14px 0 !important;
+}
+
 /*
     Skip Link
 */
@@ -25,7 +29,7 @@ body {
 }
 
 .skip-link-top {
-    top: -50px;
+    top: -55px;
 }
 
 .skip-link-top:focus {
@@ -492,7 +496,7 @@ review-item, .restaurant__Newcomment {
     font-family: Arial, sans-serif;
     width: 58vw;
     max-width: 58vw;
-    padding: 5px;
+    padding: 15px 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 10px auto;
@@ -560,7 +564,7 @@ footer p a {
     Loader
 */
 
-.loader__container {
+.loaderContainer {
     position: fixed;
     top: 0;
     left: 0;

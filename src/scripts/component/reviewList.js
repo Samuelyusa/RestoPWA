@@ -1,5 +1,3 @@
-/* eslint-disable space-before-blocks */
-/* eslint-disable no-tabs */
 import './reviewItem';
 
 class ReviewList extends HTMLElement {

@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 import { openDB } from 'idb';
 import CONFIG from '../globals/config';
 

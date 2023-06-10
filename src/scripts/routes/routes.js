@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 import Home from '../views/pages/home';
 import Favorite from '../views/pages/favorite';
 import Detail from '../views/pages/detail';

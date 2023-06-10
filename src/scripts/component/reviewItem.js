@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 class ReviewItem extends HTMLElement {
 	set review(review) {
 		this._review = review;

@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
 import { createrestaurantItemTemplate } from '../templates/template-creator';
 

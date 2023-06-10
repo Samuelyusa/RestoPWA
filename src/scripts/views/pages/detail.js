@@ -1,8 +1,3 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable guard-for-in */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-const-assign */
-/* eslint-disable no-tabs */
 import UrlParser from '../../routes/url-parser';
 import RestaurantAPISource from '../../data/restaurant-source';
 import { createrestaurantDetailTemplate, createReviewTemplate, displayNewReviewTemplate } from '../templates/template-creator';

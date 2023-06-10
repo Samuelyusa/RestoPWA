@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 import CONFIG from './config';
 
 const API_ENDPOINT = {

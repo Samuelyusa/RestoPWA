@@ -1,4 +1,3 @@
-/* eslint-disable no-tabs */
 class HeroComp extends HTMLElement {
 	connectedCallback() {
 		this.src = this.getAttribute('src') || '';

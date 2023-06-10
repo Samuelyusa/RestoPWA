@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-return-assign */
-/* eslint-disable no-tabs */
 import { async } from 'regenerator-runtime';
 import API_ENDPOINT from '../globals/api-endpoint';
 

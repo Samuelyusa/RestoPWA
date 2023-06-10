@@ -1,7 +1,3 @@
-/* eslint-disable no-return-assign */
-/* eslint-disable camelcase */
-/* eslint-disable consistent-return */
-/* eslint-disable no-tabs */
 import DrawerInitiator from '../utils/drawer-initiator';
 import UpButtonInitiator from '../utils/up-button-initiator';
 import UrlParser from '../routes/url-parser';
@@ -35,7 +31,7 @@ class App {
 		const url = UrlParser.parseActiveUrlWithCombiner();
 		const page = routes[url];
 
-		const loader__container = document.querySelector('.loader__container');
+		const loaderContainer = document.querySelector('.loaderContainer');
 		try {
 			this._content.innerHTML = await page.render();
 			await page.afterRender();
@@ -47,7 +43,7 @@ class App {
 			});
 
 			setTimeout(() => {
-				loader__container.style.display = 'none';
+				loaderContainer.style.display = 'none';
 			}, 2000);
 		} catch (error) {
 			console.error(error);
