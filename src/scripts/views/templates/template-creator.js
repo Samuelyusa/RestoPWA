@@ -1,7 +1,7 @@
+/* eslint-disable no-tabs */
 import CONFIG from '../../globals/config';
 
-const createrestaurantDetailTemplate = (restaurant) =>
-    `
+const createrestaurantDetailTemplate = (restaurant) => `
     <img tabindex="0" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
         alt="Restaurant Image" class="restaurant__poster"/>
         
@@ -10,7 +10,7 @@ const createrestaurantDetailTemplate = (restaurant) =>
         <p  tabindex="0"class="restaurant__address">${restaurant.address}, ${restaurant.city}</p>
         <p tabindex="0" class="restaurant__rating">
         <span>
-            <img src="${CONFIG.ICON}/star-rate.png" style="vertical-align: bottom;" />
+            <img src="${CONFIG.ICON}star-rate.png" style="vertical-align: bottom;" />
         </span>
         ${restaurant.rating} / 5</p>
 
@@ -44,7 +44,7 @@ const createrestaurantDetailTemplate = (restaurant) =>
     </div>
     `;
 
-const createReviewTemplate = (restaurant) => `
+const createReviewTemplate = () => `
     <div class="restaurant__addReview">
         <p><label>Add your experience<label></p>
         <input id="addReviewName" type="text" placeholder="Tell us your name here.."/>
@@ -59,13 +59,10 @@ const createReviewTemplate = (restaurant) => `
 
     <div class="restaurant__subTitleBold">
         <p>What They Say</p>
-    </div>
-`;
+    </div>`;
 
-const displayNewReviewTemplate = (restaurant) => `
-    <div id="restaurant__Newcomment"></div>
-`;
-
+const displayNewReviewTemplate = () => `
+    <div id="restaurant__Newcomment"></div>`;
 
 const createrestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item">
@@ -80,27 +77,23 @@ const createrestaurantItemTemplate = (restaurant) => `
         <h3><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h3>
         <p>${restaurant.description}</p>
         </div>
-    </div>
-`;
+    </div>`;
 
 const createLikeButtonTemplate = () => `
     <button aria-label="like this restaurant" id="likeButton" class="like">
         <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-    </button>
-`;
+    </button>`;
 
 const createLikedButtonTemplate = () => `
     <button aria-label="unlike this restaurant" id="likeButton" class="like">
         <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-    </button>
-`;
-
+    </button>`;
 
 export {
-    createrestaurantItemTemplate,
-    createrestaurantDetailTemplate,
-    createReviewTemplate,
-    displayNewReviewTemplate,
-    createLikeButtonTemplate,
-    createLikedButtonTemplate,
+	createrestaurantItemTemplate,
+	createrestaurantDetailTemplate,
+	createReviewTemplate,
+	displayNewReviewTemplate,
+	createLikeButtonTemplate,
+	createLikedButtonTemplate,
 };

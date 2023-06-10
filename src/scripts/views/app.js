@@ -1,48 +1,57 @@
+/* eslint-disable no-return-assign */
+/* eslint-disable camelcase */
+/* eslint-disable consistent-return */
+/* eslint-disable no-tabs */
 import DrawerInitiator from '../utils/drawer-initiator';
 import UpButtonInitiator from '../utils/up-button-initiator';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
 class App {
-    constructor({ button, drawer, content, upArrow }) {
-        this._button = button;
-        this._drawer = drawer;
-        this._content = content;
-        this._upArrow = upArrow;
-    
-        this._initialAppShell();
-    }
-    
-    _initialAppShell() {
-        DrawerInitiator.init({
-            button: this._button,
-            drawer: this._drawer,
-            content: this._content,
-        });
+	constructor({
+		button, drawer, content, upArrow,
+	}) {
+		this._button = button;
+		this._drawer = drawer;
+		this._content = content;
+		this._upArrow = upArrow;
 
-        UpButtonInitiator.init({
-        upArrow: this._upArrow,
-        });
-    
-        // kita bisa menginisiasikan komponen lain bila ada
-    }
+		this._initialAppShell();
+	}
 
-    async renderPage() {
-        const url = UrlParser.parseActiveUrlWithCombiner();
-        const page = routes[url];
+	_initialAppShell() {
+		DrawerInitiator.init({
+			button: this._button,
+			drawer: this._drawer,
+			content: this._content,
+		});
 
-        const loader__container = document.querySelector('.loader__container');
-        try {
-            this._content.innerHTML = await page.render();
-            await page.afterRender();
+		UpButtonInitiator.init({
+			upArrow: this._upArrow,
+		});
+	}
 
-            setTimeout(function() {
-                loader__container.style.display = 'none';
-            }, 2000);
-        } catch (error) {
+	async renderPage() {
+		const url = UrlParser.parseActiveUrlWithCombiner();
+		const page = routes[url];
 
-            console.error(error);
-            return document.body.innerHTML = `
+		const loader__container = document.querySelector('.loader__container');
+		try {
+			this._content.innerHTML = await page.render();
+			await page.afterRender();
+
+			const skipLinkElem = document.querySelector('.skip-link');
+			skipLinkElem.addEventListener('click', (event) => {
+				event.preventDefault();
+				document.querySelector('#mainContent').focus();
+			});
+
+			setTimeout(() => {
+				loader__container.style.display = 'none';
+			}, 2000);
+		} catch (error) {
+			console.error(error);
+			return document.body.innerHTML = `
             <div class="Page404">
                 <h1>404 Page Not Found</h1>
                 <p>
@@ -51,9 +60,8 @@ class App {
                 <a href="/">Go back home</a>
             </div>
             `;
-        }
-        
-    }
+		}
+	}
 }
 
 export default App;

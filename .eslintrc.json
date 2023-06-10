@@ -18,6 +18,6 @@
         "no-restricted-globals": 0,
         "linebreak-style": 0,
         "indent": ["error", "tab"],
-        "allowIndentationTabs" : true
+        "allowIndentationTabs" : 0
     }
 }

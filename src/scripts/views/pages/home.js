@@ -1,4 +1,5 @@
-import RestaurantAPISource from "../../data/restaurant-source";
+/* eslint-disable indent */
+import RestaurantAPISource from '../../data/restaurant-source';
 import { createrestaurantItemTemplate } from '../templates/template-creator';
 
 const Home = {
@@ -11,14 +12,14 @@ const Home = {
         </div>
         `;
     },
-    
+
     async afterRender() {
         const restaurants = await RestaurantAPISource.Home();
         const restaurantsContainer = document.querySelector('#restaurants');
             restaurants.forEach((restaurant) => {
                 restaurantsContainer.innerHTML += createrestaurantItemTemplate(restaurant);
             });
-        
+
         const heroImage = document.querySelector('hero-comp');
         const heroUrl = '../images/heros/hero-image_2.jpg';
 
