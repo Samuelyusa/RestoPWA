@@ -27,10 +27,12 @@ const Detail = {
 		const NewReviewContainer = document.querySelector('#restaurant__Newreview');
 
 		const heroImage = document.querySelector('hero-comp');
+		// const heroAlt = document.getElementById('hero').alt;
 		const heroUrl = `${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}`;
-
+		const heroRestoName = `Restaurant ${restaurant.name}`;
 		heroImage.setAttribute('src', heroUrl);
 		heroImage.setAttribute('style', 'display:block');
+		document.getElementById('hero').alt = heroRestoName;
 
 		restaurantContainer.innerHTML = createrestaurantDetailTemplate(restaurant);
 		ReviewContainer.innerHTML = createReviewTemplate(restaurant);

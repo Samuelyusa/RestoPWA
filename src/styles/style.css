@@ -16,7 +16,7 @@ a {
 }
 
 button {
-    padding: 15px 13px !important;
+    padding: 15px 15px !important;
 }
 
 /*
@@ -85,8 +85,8 @@ button {
     background-color: transparent;
     border: none;
     font-size: 18px;
-    padding: 8px;
     cursor: pointer;
+    /* margin-left: 20px; */
 }
 
 .app-bar .app-bar__brand {

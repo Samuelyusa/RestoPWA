@@ -6,10 +6,10 @@ const createrestaurantDetailTemplate = (restaurant) => `
         
     <div class="restaurant__details">
         <h1 tabindex="0" class="restaurant__name">${restaurant.name}</h1>
-        <p  tabindex="0"class="restaurant__address">${restaurant.address}, ${restaurant.city}</p>
+        <p tabindex="0"class="restaurant__address">${restaurant.address}, ${restaurant.city}</p>
         <p tabindex="0" class="restaurant__rating">
         <span>
-            <img src="${CONFIG.ICON}star-rate.png" style="vertical-align: bottom;" />
+            <img alt="Restaurant Rating" src="${CONFIG.ICON}star-rate.png" style="vertical-align: bottom;" />
         </span>
         ${restaurant.rating} / 5</p>
 
@@ -57,7 +57,7 @@ const createReviewTemplate = () => `
     </div>
 
     <div class="restaurant__subTitleBold">
-        <p>What They Say</p>
+        <p tabindex="0">What They Say</p>
     </div>`;
 
 const displayNewReviewTemplate = () => `

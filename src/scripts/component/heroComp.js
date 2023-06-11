@@ -1,6 +1,7 @@
 class HeroComp extends HTMLElement {
 	connectedCallback() {
 		this.src = this.getAttribute('src') || '';
+		this.alt = this.getAttribute('alt') || 'Restaurant Catalogue Main Image';
 		this.render();
 	}
 
@@ -8,7 +9,8 @@ class HeroComp extends HTMLElement {
 		this.innerHTML = `
             <img
                 id="hero"
-                src="${this.src}">
+                src="${this.src}"
+				alt="${this.alt}">
             </img>
             `;
 	}
@@ -19,7 +21,7 @@ class HeroComp extends HTMLElement {
 	}
 
 	static get observedAttributes() {
-		return ['src'];
+		return ['src', 'alt'];
 	}
 }
 
